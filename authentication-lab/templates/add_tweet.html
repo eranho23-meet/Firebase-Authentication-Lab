@@ -2,15 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>place</title>
 </head>
 <body>
     Great Job!
-    <form method="POST" action="/add_tweet">
+    <form method="POST" action="/add_tweet?f=f1">
         <div>
-            <input type="submit" name="">
+            <input type="submit" name="exit">
         </div>
-        
     </form>
+
+    <div>
+        <form method="post" action="/add_tweet">
+            <div>
+                <input type="text"  name="title" required>
+                <input type="text"  name="con" maxlength="280">
+
+                <div>
+                    <input type="submit"/>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <form method="POST" action="/add_tweet?f=f2">
+        <div>
+            <input type="submit" name="go to all tweets">
+        </div>
+    </form>
+
 </body>
 </html>
